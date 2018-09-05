@@ -6,7 +6,7 @@ try{
     }
    
         stage('build'){
-        sh 'ant -f build-mt.xml'
+        bat 'ant -f build-mt.xml'
     }
      stage('Test'){
       /*  sh 'mvn test' */
@@ -16,13 +16,13 @@ try{
        /* sh 'mvn package' */
         echo 'Package done'
     }
-    stage('Deploy-dev'){
+    stage('install-dev'){
         echo 'Deployed to dev'
     }
-    stage('Deploy-stg'){
+    stage('install-stg'){
         echo 'Deployed to stg'
     }
-    stage('Deploy-prod'){
+    stage('install-prod'){
         echo 'Deployed to prod'
     }
     
