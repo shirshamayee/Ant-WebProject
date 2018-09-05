@@ -17,13 +17,13 @@ try{
         echo 'Package done'
     }
     stage('install-dev'){
-        echo 'Deployed to dev'
+        echo 'install to dev'
     }
     stage('install-stg'){
-        echo 'Deployed to stg'
+        echo 'install to stg'
     }
     stage('install-prod'){
-        echo 'Deployed to prod'
+        echo 'install to prod'
     }
     
     stage('Email'){
